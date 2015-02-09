@@ -6,3 +6,8 @@
 * Demonstrate how to sort an array of strings by the length of each string, shortest strings
 * first.
 **/
+var arrStr = ['ab', 'abcdefgh', '1 abcd', '2 abcdefgh 1 abcd'];
+arrStr.sort(function(a,b){
+    return b.length - a.length;
+});
+console.log(arrStr);
