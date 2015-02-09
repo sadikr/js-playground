@@ -10,15 +10,26 @@
 *
 * Now, write a program to solve the following message.
 *
-* Vrphwklqj phdqlqixo
+* Something meaningful
 *
 * */
 
-function getStringOf(code){
-    return String.fromCharCode(code);
+
+/**
+ *
+ * @param charCode
+ * @returns {String}
+ */
+function getStringOf(charCode){
+    return String.fromCharCode(charCode);
 }
 
-function patternCrypto(str){
+/**
+ *
+ * @param str
+ * @returns {String}
+ */
+function encrypt(str){
     var min = [65, 97],
         max = [90, 122],
         charCode,
@@ -42,8 +53,8 @@ function patternCrypto(str){
     }
     return resultStr;
 }
-var pattern = "Vrphwklqj phdqlqixo";
-console.log( patternCrypto(pattern) );
+var pattern = "Something meaningful";
+console.log( encrypt(pattern) );
 
 /**
  * Problem : 2
@@ -58,3 +69,7 @@ console.log( patternCrypto(pattern) );
     vruwlqj vroxwlrq brx fdq wklqn ri. Surylgh wkh vsdfh dqg wlph frpsohalwb ri brxu
     dojrulwkp
 **/
+
+function decrypt(str){
+
+}
